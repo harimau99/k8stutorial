@@ -1,44 +1,46 @@
-##To view running k8:
+**Minikube - The local K8 in your laptop**
+--
+**For local that use minikube:**
+minikube service `<deployment-name>`
+
+**Viewing the Kubernetes in glance**
+--
+**To view running k8:**
 kubectl get nodes
 
-##To view deployment
+**To view deployment**
 kubectl get deployments
 
-##To view pods:
+**To view pods:**
 kubectl get pods
 
-##To view all pods/deployment:
+**To view all pods/deployment:**
 kubectl get all
 
-##Check services:
+**Check services:**
 kubectl get services
 
-##To check replica sets:
+**To check replica sets:**
 kubectl get rs
 
-
 --
-##For local that use minikube:
-minikube service <deployment-name>
-
---
-##For label
-
-##Check pods label:
-
+**For label
+Check pods label:**
 Kubectl get pods  --show-labels
 
-##Overwrite method:
+**Overwrite method:**
 Kubectl label pod/<pods name>  app=<new label name> --overwrite
 
-##To delete label:
+**To delete label:**
 kubectl label pod/<pods name> app-
 
 --
-##Search through pods label
+**Search through pods label**
+--
 
-##search pods label kubectl get pods -l <label-name> | eg: kubectl get pods -l env=production
+**search pods label kubectl get pods -l `<label-name>` | eg: kubectl get pods -l env=production**
 kubectl get pods -l env=production
 
-##Search pods label with selector. kubectl get pods --selector <label-name1>,<label-name2>
+Search pods label with selector. kubectl get pods --selector `<label-name1>,<label-name2>`
+
 kubectl get pods --selector dev-lead=jim,env=production
