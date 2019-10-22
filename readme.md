@@ -34,7 +34,6 @@ Kubectl label pod/<pods name>  app=<new label name> --overwrite
 **To delete label:**
 kubectl label pod/<pods name> app-
 
---
 **Search through pods label**
 --
 
