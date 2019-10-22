@@ -37,7 +37,8 @@ kubectl label pod/<pods name> app-
 **Search through pods label**
 --
 
-**search pods label kubectl get pods -l `<label-name>` | eg: kubectl get pods -l env=production**
+**search pods label kubectl get pods -l `<label-name>` **
+eg: kubectl get pods -l env=production
 kubectl get pods -l env=production
 
 Search pods label with selector. kubectl get pods --selector `<label-name1>,<label-name2>`
