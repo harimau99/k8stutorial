@@ -44,3 +44,17 @@ kubectl get pods -l env=production
 Search pods label with selector. kubectl get pods --selector `<label-name1>,<label-name2>`
 
 kubectl get pods --selector dev-lead=jim,env=production
+
+**Deployment**
+--
+
+**To run K8 Applications and creating image**
+kubectl run hw --image=karthequian/helloworld --port=80
+
+**To create k8 with YAML Deployment file:**
+kubectl create -f <name of yaml file>
+
+**Expose the application:**
+kubectl expose deployment hw --type=NodePort
+
+
