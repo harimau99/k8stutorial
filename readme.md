@@ -24,9 +24,7 @@ kubectl get services
 **To check replica sets:**
 kubectl get rs
 
---
-**For label
-Check pods label:**
+**For label Check pods label:**
 Kubectl get pods  --show-labels
 
 **Overwrite method:**
