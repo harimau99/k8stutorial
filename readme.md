@@ -3,8 +3,8 @@
 **For local that use minikube:**
 minikube service `<deployment-name>`
 
---
 **Viewing the Kubernetes in glance**
+--
 
 **To view running k8:**
 kubectl get nodes
